@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# Birthday Riddles
+
+A simple single page application riddles activity :
+
+- Each riddle is locked, and only unlocked if the previous ones have been solved
+- A smooth scroll is used to transition from one section to another
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
