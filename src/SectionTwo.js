@@ -1,4 +1,5 @@
-import { animateScroll as scroller } from 'react-scroll'
+// eslint-disable-next-line
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import React, { useState } from 'react';
 import "./Section.css";
 
