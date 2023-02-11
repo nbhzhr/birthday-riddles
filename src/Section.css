@@ -1,0 +1,78 @@
+.box {
+    height: 40rem;
+    width: 50rem;
+    border: 3px solid black;
+    background-color: white;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-family: Open Sans;
+    font-weight: bolder;
+  }
+
+.error {
+  color: #B3290C;
+}
+
+.locked-section {
+  margin-top: 150px;
+  height: 15rem;
+  width: auto;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.riddle-section {
+  margin-top: 10px;
+  height: 20rem;
+  width: auto;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.eightbit-btn-section {
+  background: #1919a6;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  padding: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: none; 
+  color: white;
+  box-shadow: inset (-4px) (-4px) 0px 0px #2121de;
+  }
+
+  .eightbit-btn-section:hover,
+  .eightbit-btn-section:focus {
+      background: #2121DE;
+      box-shadow: inset (-4px*1.5) (-4px*1.5) 0px 0px #2121de;
+  }
+
+  .eightbit-btn-section:active {
+      box-shadow: inset 4px 4px 0px 0px #1919a6;
+  }
+
+  .eightbit-btn-section:before,
+  .eightbit-btn-section:after {
+  content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      box-sizing: content-box;
+  }
+
+  .eightbit-btn-section:before {
+      top: -6px;
+      left: 0;
+      border-top: 6px black solid;
+      border-bottom: 6px black solid;
+  }
+
+  .eightbit-btn-section:after {
+      left: -6px;
+      top: 0;
+      border-left: 6px black solid;
+      border-right: 6px black solid;
+  }
