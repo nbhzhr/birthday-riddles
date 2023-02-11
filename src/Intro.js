@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { animateScroll as scroller } from 'react-scroll'
 import './Intro.css'
 
 const Intro = ({nextSection, setNextSection}) => {
