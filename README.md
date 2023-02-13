@@ -4,7 +4,8 @@ A simple single page application riddles activity :
 
 - Each riddle is locked, and only unlocked if the previous ones have been solved
 - A smooth scroll is used to transition from one section to another
-- Netlify Deployment : https://63e7afb577521d0008d424b6--mellifluous-bombolone-daaa06.netlify.app
+- Working on : making it more mobile friendly
+- Netlify Deployment : https://63e9a7d8e68aec0008fd84e0--mellifluous-bombolone-daaa06.netlify.app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
