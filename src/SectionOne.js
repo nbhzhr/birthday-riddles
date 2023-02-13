@@ -2,6 +2,8 @@
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import React, { useState } from 'react';
 import "./Section.css";
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
 
 const SectionOne = ({ name, setNextSection }) => {
   const [password, setPassword] = useState('');
@@ -33,34 +35,38 @@ const SectionOne = ({ name, setNextSection }) => {
   };
 
   return (
-    <div className="box" id="section-one">
-      { name.sectionUnlocked ? (
-        activityUnlocked ? (
-          <div>
-            <p>Activity {name.sectionName} : Onsen Relaxation</p>
-            <p>Meet : 10.30am @ Joo Koon MRT</p>
-            <p>Dress Code : Be comfy get ready to be nakey</p>
-            <button onClick={handleClick} className="eightbit-btn-section"> Jom next activity </button>
-          </div>
-        ) : (
-          <form onSubmit={handleSubmit}>
-            <label>
-              <p>Good morning</p>
-              Speaking of birthdays, what's mine:
-              <input type="date" value={password} onChange={(event) => setPassword(event.target.value)} />
-            </label>
-            <p></p>
-            <button type="submit" className="eightbit-btn-section">Unlock</button>
-            <p></p>
-            {error && <div className="error">{error}</div>}
-          </form>
-        )) : (
-          <div>
-            <img class='locked-section'src='https://drive.google.com/uc?export=view&id=1Vkit4DviTA0TRoRb3OrDy6gIMDks8Hzb' alt='lock'></img>
-          </div>
-        )
-      }
-    </div>
+    <Container fluid="md">
+      <Col md={{ span: 6, offset: 3 }}>
+        <div className="box" id="section-one">
+          { name.sectionUnlocked ? (
+            activityUnlocked ? (
+              <div>
+                <p>Activity {name.sectionName} : Onsen Relaxation</p>
+                <p>Meet : 10.30am @ Joo Koon MRT</p>
+                <p>Dress Code : Be comfy get ready to be nakey</p>
+                <button onClick={handleClick} className="eightbit-btn-section"> Jom next activity </button>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit}>
+                <label>
+                  <p>Good morning</p>
+                  Speaking of birthdays, what's mine:
+                  <input type="date" value={password} onChange={(event) => setPassword(event.target.value)} />
+                </label>
+                <p></p>
+                <button type="submit" className="eightbit-btn-section">Unlock</button>
+                <p></p>
+                {error && <div className="error">{error}</div>}
+              </form>
+            )) : (
+              <div>
+                <img class='locked-section'src='https://drive.google.com/uc?export=view&id=1Vkit4DviTA0TRoRb3OrDy6gIMDks8Hzb' alt='lock'></img>
+              </div>
+            )
+          }
+        </div>
+    </Col>
+    </Container>
   );
 };
 

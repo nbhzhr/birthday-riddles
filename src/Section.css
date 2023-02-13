@@ -1,14 +1,16 @@
 .box {
-    height: 40rem;
-    width: 50rem;
+    width: 80%;
+    padding: 2rem;
     border: 3px solid black;
     background-color: white;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 3rem auto;
+    /* margin-top: 100px;
+    margin-bottom: 100px; */
     text-align: center;
+    vertical-align: middle;
     font-family: Open Sans;
     font-weight: bolder;
+    display: inline-flexbox;
   }
 
 .error {
@@ -16,7 +18,6 @@
 }
 
 .locked-section {
-  margin-top: 150px;
   height: 15rem;
   width: auto;
   image-rendering: -webkit-optimize-contrast;
